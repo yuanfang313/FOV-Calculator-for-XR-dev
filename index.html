@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOV Calculator for XR Development</title>
+</head>
+<style>
+
+
+  .result_container {
+    max-width: 40rem;
+    margin: 50px auto;
+  }
+  .hed {
+    margin-bottom: 100px;
+  }
+  .results {
+    color: rgb(6, 132, 250);
+  }
+  .label {
+    display: inline;
+  }
+
+</style>
+<body>
+
+  <div class="result_container">
+    <h1 class="hed">FOV Calculator for XR Development</h1>
+      <h2 class="label">Distance:</h2>
+      <input type="number" id="distance" placeholder="Distance (unit: meter)">
+      <button id="add_distance">SUMMIT</button>
+      <hr>
+    <h2>- Length of FOV: <span class="results" id="r_length">0.00</span> m</h2>
+    <h2>- Height of FOV: <span class="results" id="r_height">0.00</span> m</h2>
+  </div>
+  
+  <script src="./fovCalculater.js"></script>
+</body>
+</html>
